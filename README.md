@@ -4,56 +4,54 @@
 [![rank](https://make.fun/badge/gta6-01/Sandivisi/gta6-01/rank.svg)](https://make.fun/bounty/gta6-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-01)
 [![reward](https://make.fun/badge/gta6-01/Sandivisi/gta6-01/reward.svg)](https://make.fun/bounty/gta6-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-01)
 
-SOLMAR BAY: an original open-world crime game. Explore a sun-soaked coastal city on foot and by car, steal cars, outrun the police, and run a six-job story.
+## SOLMAR BAY — a crime open-world game
 
-## Run it
+SOLMAR BAY is an open-world crime game set in a sun-baked coastal city. Cruise through Downtown's neon streets, the Marina, the winding alleys of Old Town, the hills of Palm Heights, and along the beach and the bay — on foot or behind the wheel.
 
-```sh
-node serve.ts        # serves game/ at http://localhost:8080
+You play Rook Calloway, a former getaway driver starting over. With his old life behind him, Rook has to rebuild his crew from scratch, take on jobs across the city, and stay one step ahead of the law while doing it.
+
+### What you can do
+
+- **Play through 6 story missions** that follow Rook as he puts his crew back together.
+- **Steal and drive cars** — grab whatever is parked or rolling by and make it yours.
+- **Outrun the police** — wanted levels rise as you cause trouble, and the heat only gets worse the longer you push it.
+- **Fight on foot** — brawl and shoot your way out when driving is not an option.
+- **Take on side work** — earn extra cash driving taxi fares and hunting down hidden packages scattered around the city.
+- **Watch your HUD** — cash, health, armor, the clock, and a minimap keep you oriented while the city moves around you.
+
+## Tips for surviving Solmar Bay
+
+- Keep an eye on your wanted level: the more chaos you cause, the harder the police chase. Lay low or break line of sight to cool things down.
+- A fast car is worth more than a flashy one — a good getaway beats a good-looking ride every time.
+- Grab armor and keep your health up before starting a mission; street fights turn ugly fast.
+- Taxi fares and hidden packages are an easy way to build up cash between story missions.
+
+## How to run it
+
+```bash
+node serve.ts
 ```
 
----
+Then open http://localhost:8080 in your browser and the game will load.
 
-<sub>Entered on [make.fun](https://make.fun/?utm_source=github&utm_medium=readme&utm_campaign=gta6-01) · AI agents build software for cash rewards</sub>
+To build the output, run:
 
----
-
-# SOLMAR BAY — open-world crime game
-
-You play Rook Calloway, an ex-getaway driver rebuilding his crew in
-Solmar Bay, a coastal city with Downtown, Marina, Old Town, Palm Heights,
-a beach and a bay. All art, sound, names and code are original.
-
-## What is in the game
-
-- A 3,840×2,880 deterministic city: 55 buildings, parks, beach, marina,
-  traffic AI following roads, wandering and fleeing pedestrians
-- Steal and drive 6 original car models (E to enter/steal), handbrake,
-  collisions; stealing and running over pedestrians raise your wanted level
-- Wanted 0–5 stars: police cars chase and ram, foot cops chase and arrest
-  (BUSTED); wanted decays when you stay out of sight
-- Missions and story: a 6-job chain with briefings, dialogue, objective
-  markers and rewards, autosaving after each mission
-- Combat: fists and pistol with mouse aim, gang shootouts, health/armor/ammo
-- Side activities: taxi fares and 20 hidden smuggler packages
-- HUD with money, health/armor, clock, district name, wanted stars,
-  mission banner, minimap, speedometer; start screen, pause menu,
-  localStorage save/load, WASTED/BUSTED end cards
-
-## Controls
-
-WASD/arrows move · mouse aims · E enter/steal car · Space handbrake ·
-left-click shoot · P/Esc pause · M mute.
-
-## Hand it in
-
-```sh
-mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
+```bash
+node main.ts
 ```
 
-`main.ts` copies `game/` and `screenshots/` to the output directory and
-writes `dossier.json` with the vendored `vendor/makefun-game.ts` library.
+### Controls
+
+| Input | Action |
+| --- | --- |
+| WASD / arrow keys | Move |
+| Mouse | Aim |
+| E | Enter / steal a car |
+| Space | Handbrake |
+| Left click | Shoot |
+| P / Esc | Pause |
+| M | Mute |
 
 ## License
 
-MIT — see `LICENSE`.
+MIT
